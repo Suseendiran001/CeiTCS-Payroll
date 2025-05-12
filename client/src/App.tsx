@@ -36,9 +36,9 @@ const App = () => (
       <Toaster />
       <Sonner />      <BrowserRouter>
         <Routes>
-          <Route path="/" element={<SplashScreen />} />
+          <Route path="/" element={<Login />} />
+          {/* Login route kept for backward compatibility */}
           <Route path="/login" element={<Login />} />
-          <Route path="/portal" element={<SelectPortal />} />
           
           {/* Admin Routes */}
           <Route path="/" element={<AppLayout />}>
